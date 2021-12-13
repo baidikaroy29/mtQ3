@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+    <html>
+
+        <head>
+	
+            <title>Math Quizz Game</title> <!-- This is the title of the web page -->
+
+            <!-- This are the bootstrap links -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+            <link rel="stylesheet" type="text/css" href="quiz.css"> <!-- This tag is used to connect HTML with CSS -->
+            <script src="quiz.js"></script> <!-- This tag is used to connect HTML With JS / JavaScript -->
+
+        </head>
+
+        <body style="background-color: lawngreen;">
+
+            <!-- This is the code of the name and score portion -->
+            <h4 id="player1_name"></h4> <span id="player1_score"></span><br>
+	        <h4 id="player2_name"></h4> <span id="player2_score"></span><br>
+
+            <!--This is the main disine part-->
+            <div class="container">
+	
+                <center> <!-- Center tag is used to centarize the elements, that is inside the Center tag -->
+		
+                    <h2 style="color: rgb(70, 58, 58);">Guess The Word!</h2> <!-- This is the heading of the page -->
+
+		            <h3 id = "player_question"></h3> <!--Whose Question turn it is.-->
+		            <h3 id = "player_answer"></h3> <!--Whose Answer turn it is.-->
+
+		            <div class="col-lg-6" id="output"></div> <!--This is the place where the question will be displayed -->
+                    <br><br>
+
+                    <!-- Typing the number 1 -->
+		            <label><b style="color: red">Put your Number 1</b></label>
+                    <input type = "number" id = "num1" class = "form-control" placeholder="Please type your Number1">
+		            <br><br>
+
+                    <!-- Typing the number 2 -->
+		            <label><b style="color: red">Put your Number 2</b></label>
+                    <input type = "number" id = "num2" class = "form-control" placeholder="Please type your Number2">
+		            <br><br>
+
+                    <button class="btn btn-success" onclick="send()" style="width: 30%;">Send</button> <!-- Button send -->
+        
+                </center>
+
+            </div>
+
+        </body>
+
+    </html>
